@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header class="card__header">
+        <h1>Create Account</h1>
+        <p class="card__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </header>
+
+      <form class="form" id="signupForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="off" />
+          <span class="field__error" id="nameError"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" autocomplete="off" />
+          <span class="field__error" id="emailError"></span>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="off"
+          />
+          <span class="field__error" id="passwordError"></span>
+        </div>
+
+        <div class="field">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            autocomplete="off"
+          />
+          <span class="field__error" id="confirmPasswordError"></span>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn" disabled>
+          Create Account
+        </button>
+
+        <p class="form-success" id="formSuccess">
+          Account created successfully
+        </p>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
